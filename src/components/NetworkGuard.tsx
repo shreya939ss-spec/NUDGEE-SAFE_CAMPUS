@@ -54,7 +54,7 @@ export function OfflineScreen({ onRetry }: { onRetry: () => void }) {
       <div className="relative flex flex-col items-center text-center">
         <div className="relative w-20 h-20 mb-5">
           <div className="w-20 h-20 rounded-2xl bg-white/5 flex items-center justify-center opacity-40">
-            <img src="/nudgee-logo.png" alt="NUDGEE" width={48} height={48} draggable={false} />
+            <img src="./nudgee-logo.png" alt="NUDGEE" width={48} height={48} draggable={false} />
           </div>
           <div className="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-error-500 flex items-center justify-center ring-4 ring-[#0a0e3d]">
             <WifiOff className="w-4 h-4 text-white" />

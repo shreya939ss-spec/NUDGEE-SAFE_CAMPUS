@@ -1,7 +1,8 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "nudgee-campus-influence",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "NUDGEE — AI-powered campus influence PWA that turns positive influence into the strongest peer pressure.",
   "type": "module",
   "scripts": {
     "dev": "vite",

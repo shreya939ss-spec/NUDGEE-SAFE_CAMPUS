@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 export function NudgeeLogo({ size = 40, className = '' }: { size?: number; className?: string }) {
   return (
     <img
-      src="/nudgee-logo.png"
+      src="./nudgee-logo.png"
       alt="NUDGEE"
       width={size}
       height={size}

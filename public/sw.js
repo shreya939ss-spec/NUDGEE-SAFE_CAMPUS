@@ -1,5 +1,5 @@
 const CACHE_NAME = 'nudgee-shell-v2';
-const SHELL_URLS = ['/', '/index.html', '/manifest.json', '/nudgee-logo.png', '/icon-192.png', '/icon-512.png'];
+const SHELL_URLS = ['.', './index.html', './manifest.json', './nudgee-logo.png', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -32,7 +32,7 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put('/index.html', copy)).catch(() => undefined);
           return res;
         })
-        .catch(() => caches.match('/index.html').then((r) => r || caches.match('/')))
+        .catch(() => caches.match('./index.html').then((r) => r || caches.match('.')))
     );
     return;
   }
